@@ -62,15 +62,18 @@ using namespace std;
 
 int main()
 {
-
+    int x;
+    cin >> x;
+    // cin.ignore(); // getline er age int thakle enter remove korte ignore use korte hobe
+    getchar(); // same as cin.ignore
     string a;
-    cin >> a;
 
-    cout << a.front() << endl; // first index value
-    cout << a[0] << endl;
-    cout << a.at(0) << endl; // nth index value
+    // cin >> a;
 
-    cout << a[a.size() - 1] << endl;
-    cout << a.back() << endl; // Last word
+    getline(cin, a); // input with space
+
+    cout << x << endl;
+    cout << a << endl;
+    // cout << a.size() << endl;
     return 0;
 }

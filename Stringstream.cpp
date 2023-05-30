@@ -64,13 +64,25 @@ int main()
 {
 
     string a;
-    cin >> a;
+    getline(cin, a);
 
-    cout << a.front() << endl; // first index value
-    cout << a[0] << endl;
-    cout << a.at(0) << endl; // nth index value
+    stringstream oneword(a);
+    string word;
+    // oneword >> word; // ekta word set hobe
+    // cout << word << endl;
 
-    cout << a[a.size() - 1] << endl;
-    cout << a.back() << endl; // Last word
+    // oneword >> word;
+    // cout << word << endl;
+
+    // oneword >> word;
+    // cout << word << endl;
+
+    // same as above by while loop
+    while (oneword >> word)
+    {
+        cout << word << endl;
+    }
+
     return 0;
 }
+// Abid hassan eshad

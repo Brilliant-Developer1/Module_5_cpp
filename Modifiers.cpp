@@ -62,15 +62,24 @@ using namespace std;
 
 int main()
 {
+    // input Abid next line hassan
+    string a, b;
+    cin >> a >> b;
 
-    string a;
-    cin >> a;
+    a = a + b;
 
-    cout << a.front() << endl; // first index value
-    cout << a[0] << endl;
-    cout << a.at(0) << endl; // nth index value
+    a.push_back('O'); // Last Index e value add
+    cout << a << endl;
+    a.pop_back(); // Last Index e value remove korbe
+    cout << a << endl;
 
-    cout << a[a.size() - 1] << endl;
-    cout << a.back() << endl; // Last word
+    a.erase(3, 1); // 3no index er 1 ta charecter delet hobe
+    cout << a << endl;
+
+    a.replace(3, 2, "ZR");
+    cout << a << endl;
+
+    a.insert(3, "d");
+    cout << a << endl;
     return 0;
 }

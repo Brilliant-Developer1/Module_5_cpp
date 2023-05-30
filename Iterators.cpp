@@ -64,13 +64,26 @@ int main()
 {
 
     string a;
+    // string::iterator it;
     cin >> a;
 
-    cout << a.front() << endl; // first index value
-    cout << a[0] << endl;
-    cout << a.at(0) << endl; // nth index value
+    // for (int i = 0; i < a.size(); i++)
+    // {
+    //     cout << a[i];
+    // }
 
-    cout << a[a.size() - 1] << endl;
-    cout << a.back() << endl; // Last word
+    // a.begin pointer tai de refrence kore value access korte hobe
+    // cout << *a.begin() << endl;
+    // cout << *(a.end() - 1) << endl;
+
+    // for (it = a.begin(); it < a.end(); it++)
+    // {
+    //     cout << *it;
+    // }
+    for (auto it = a.begin(); it < a.end(); it++)
+    {
+        cout << *it;
+    }
+
     return 0;
 }

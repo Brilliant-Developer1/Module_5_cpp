@@ -73,6 +73,7 @@ int main()
 
     // if (a.empty() != true)
     //     cout << a << endl;
+
     cout << a << endl;
     a.resize(5);
     cout << a << endl;
